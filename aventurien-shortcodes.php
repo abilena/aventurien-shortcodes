@@ -9,13 +9,12 @@ Author URI: https://profiles.wordpress.org/Klemens#content-plugins
 Text Domain: aventurien-shortcodes
 */ 
 
-include 'template.class.php';
-
+require_once('inc/template.class.php');
 require_once('inc/aventurien-install.php'); 
 require_once('inc/aventurien-templates.php'); 
 
-register_deactivation_hook(__FILE__, 'aventurien_uninstall');
-register_activation_hook(__FILE__, 'aventurien_install');
+// register_deactivation_hook(__FILE__, 'aventurien_uninstall');
+// register_activation_hook(__FILE__, 'aventurien_install');
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 'aventurien-shortcodes' Parchment Shortcode

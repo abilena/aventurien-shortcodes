@@ -6,7 +6,7 @@ function aventurien_parchment_html($name, $content) {
     $path_url = plugins_url() . "/aventurien-shortcodes";
 
     $output = "";
-    $template = new Template($path_local . "../tpl/parchment.html");
+    $template = new AventurienShortcodes\Template($path_local . "../tpl/parchment.html");
     $template->set("Name", $name);
     $template->set("Content", $content);
     $output .= $template->output();
@@ -20,7 +20,7 @@ function aventurien_cover_html($image) {
     $path_url = plugins_url() . "/aventurien-shortcodes";
 
     $output = "";
-    $template = new Template($path_local . "../tpl/cover.html");
+    $template = new AventurienShortcodes\Template($path_local . "../tpl/cover.html");
     $template->set("Image", $image);
     $output .= $template->output();
 

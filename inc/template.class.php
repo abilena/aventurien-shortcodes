@@ -1,5 +1,7 @@
 <?php
 
+namespace AventurienShortcodes {
+
 class Template {
     protected $file;
     protected $values = array();
@@ -79,6 +81,8 @@ function get_subdirs($path) {
         closedir($handle);
     }
     return $subdirs;
+}
+
 }
 
 ?>
