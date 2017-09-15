@@ -120,7 +120,8 @@
 .aventurien-portrait-shadow {
     width: 300px;
     height: 430px;
-    background-image: url("../img/cover.shadow.png");
+    /* background-image: url("../img/cover.shadow.png"); */
+    box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.25);
     position: absolute;
     top: 0px;
 }
@@ -128,7 +129,8 @@
 .aventurien-portrait-frame {
     width: 300px;
     height: 430px;
-    background-image: url("../img/cover.frame.png");
+    /* background-image: url("../img/cover.frame.png"); */
+    display: none;
     position: absolute;
     top: 0px;
 }
