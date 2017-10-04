@@ -56,4 +56,32 @@ function aventurien_cover_shortcode($atts, $content) {
 	return aventurien_cover_html($image);
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 'aventurien-shortcodes' Cover Shortcode
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+add_shortcode ('aventurien-list', 'aventurien_list_shortcode');
+
+function aventurien_list_shortcode($atts, $content) {
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
+	if (!isset($atts['id']) || !intval($atts['id'])) {
+		$atts['id'] = get_the_ID();
+	}
+
+	if (!isset($atts['order']) || !$atts['order']) {
+		$atts['order'] = 'asc';
+	}
+
+	if (!isset($atts['size']) || !$atts['size']) {
+		$atts['size'] = 'normal';
+	}
+
+	$atts['title'] = $content;
+
+	return aventurien_list_html($atts);
+}
+
 ?>

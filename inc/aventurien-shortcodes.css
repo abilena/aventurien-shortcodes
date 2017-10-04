@@ -13,8 +13,6 @@
     src: url("../fonts/gentium.basic.regular.ttf");
 }
 
-
-
 .aventurien-container {
 	background-color: rgb(18, 17, 15); 
 	background: url("../img/background.png") repeat;
@@ -33,6 +31,10 @@
 	vertical-align: top;
 	width: 325px;
 }
+
+/**************************************************************************************/
+/*** aventurien-parchment                                                           ***/
+/**************************************************************************************/
 
 .aventurien-container-parchment {
 }
@@ -102,6 +104,10 @@
 	border: none;
 }
 
+/**************************************************************************************/
+/*** aventurien-portrait                                                            ***/
+/**************************************************************************************/
+
 .aventurien-container-portrait {
     position: relative;
 	top: 8px;
@@ -134,3 +140,84 @@
     position: absolute;
     top: 0px;
 }
+
+/**************************************************************************************/
+/*** aventurien-list                                                                ***/
+/**************************************************************************************/
+
+.aventurien-list {
+    display: inline-block;
+}
+
+.aventurien-list-title {
+	font-family: 'Overlock';
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 32px;
+}
+
+.aventurien-list-items {
+}
+
+.aventurien-list-item {
+    width: 90px;
+    height: 160px;
+    margin: 9px;
+    display: inline-block;
+    float: left;
+}
+
+.aventurien-list-item-frame {
+    width: 86px;
+    height: 116px;
+    position: absolute;
+    border: 2px solid;
+    border-image: url(../img/slot.border.png) 2 2 2 2;
+}
+
+.aventurien-list-item-frame a {
+    width: 86px;
+    height: 116px;
+    display: block;    
+}
+
+.aventurien-list-item-thumbnail {
+    width: 90px;
+    height: 120px;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.aventurien-list-item-label {
+    width: 98px;
+    height: 40px;
+    position: absolute;
+    display: inline-table;
+    position: relative;
+    left: -4px;
+    top: -5px;
+}
+
+.aventurien-list-item-label a {
+    color: #a99877;
+}
+
+.aventurien-list-item-label div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 5px 5px 5px;
+}
+
+.aventurien-list-item-label-normal {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+.aventurien-list-item-label-small {
+    font-size: 9px;
+    font-weight: normal;
+    line-height: 12px;
+}
+
