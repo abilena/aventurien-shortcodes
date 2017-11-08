@@ -74,16 +74,18 @@ function aventurien_date_html($atts) {
     $path_local = plugin_dir_path(__FILE__);
     $path_url = plugins_url() . "/aventurien-shortcodes";
 
-    $day = "1";
-    $month = "PRA";
-    $year = "1014";
+    $day = "?";
+    $month = "";
+    $year = "";
+    $style = "aventurien-date-unknown";
     preg_match_all('/(\d+)\. (\w+) (\d+) [Bb][Ff]/', $atts['date'], $matches);
     $count = count($matches[0]);
     if ($count > 0)
     {
         $day = $matches[1][0];
         $month = $matches[2][0];
-        $year = $matches[3][0];
+        $year = $matches[3][0] . " BF";
+        $style = "";
     }
 
     $output = "";
@@ -91,6 +93,7 @@ function aventurien_date_html($atts) {
     $template->set("Day", $day);
     $template->set("Month", $month);
     $template->set("Year", $year);
+    $template->set("Style", $style);
     $template->set("Location", $atts['location']);
     $template->set("Info", $atts['info']);
     $output .= $template->output();
