@@ -84,4 +84,30 @@ function aventurien_list_shortcode($atts, $content) {
 	return aventurien_list_html($atts);
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 'aventurien-shortcodes' Date Shortcode
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+add_shortcode ('aventurien-date', 'aventurien_date_shortcode');
+
+function aventurien_date_shortcode($atts, $content) {
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
+	if (!isset($atts['date']) || !$atts['date']) {
+		$atts['date'] = '1. PRA 1014 BF';
+	}
+
+	if (!isset($atts['location']) || !$atts['location']) {
+		$atts['location'] = '';
+	}
+
+	if (!isset($atts['info']) || !$atts['info']) {
+		$atts['info'] = '';
+	}
+
+	return aventurien_date_html($atts);
+}
+
 ?>

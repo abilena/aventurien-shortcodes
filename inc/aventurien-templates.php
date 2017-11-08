@@ -69,4 +69,33 @@ function aventurien_list_html($atts) {
 	return $output;
 }
 
+function aventurien_date_html($atts) {
+    
+    $path_local = plugin_dir_path(__FILE__);
+    $path_url = plugins_url() . "/aventurien-shortcodes";
+
+    $day = "1";
+    $month = "PRA";
+    $year = "1014";
+    preg_match_all('/(\d+)\. (\w+) (\d+) [Bb][Ff]/', $atts['date'], $matches);
+    $count = count($matches[0]);
+    if ($count > 0)
+    {
+        $day = $matches[1][0];
+        $month = $matches[2][0];
+        $year = $matches[3][0];
+    }
+
+    $output = "";
+    $template = new AventurienShortcodes\Template($path_local . "../tpl/date.html");
+    $template->set("Day", $day);
+    $template->set("Month", $month);
+    $template->set("Year", $year);
+    $template->set("Location", $atts['location']);
+    $template->set("Info", $atts['info']);
+    $output .= $template->output();
+
+	return $output;
+}
+
 ?>

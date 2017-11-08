@@ -8,8 +8,10 @@ Stable tag: trunk
 
 This plugin allows you to display style blocks in your posts using the shortcodes:
 
-[aventurien-parchment]Place your text here[/aventurien-parchment]
-[aventurien-cover]
+[aventurien-parchment title="Example title"]Place your text here[/aventurien-parchment]
+[aventurien-cover image="http://www.test.com/img/myimage.jpg"]
+[aventurien-list id="pageslug" order="asc" size="normal"]
+[aventurien-date date="7. FIR 1036 BF" info="Place more info about this day here" location="Havena, Albernia"]
 
 == Description ==
 

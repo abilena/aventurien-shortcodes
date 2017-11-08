@@ -229,3 +229,72 @@
     line-height: 12px;
 }
 
+/**************************************************************************************/
+/*** aventurien-date                                                                ***/
+/**************************************************************************************/
+
+.aventurien-date {
+     min-height: 60px;   
+}
+
+.aventurien-date-bg {
+    position: relative;
+    border: 4px solid black;
+    border-image: url(../img/date.border.png) 4 4 4 4;
+    background-image: url(../img/background.png);
+    box-shadow: inset -20px 0 20px -10px rgb(0, 0, 0), inset 20px 0 20px -10px rgb(0, 0, 0);
+}
+
+.aventurien-date-banner {
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 75px;
+    height: 70px;
+    background-image: url(../img/date.banner.png);
+}
+
+.aventurien-date-info {
+    display: inline-block;
+    left: 70px;
+    top: 1px;
+    position: relative;
+}
+
+.aventurien-date-banner-month {
+    margin-top: 8px;
+    font: normal 8px/1.0 Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+
+.aventurien-date-banner-day {
+    font: normal 18px/1.0 Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+
+.aventurien-date-banner-year {
+    margin-top: 2px;
+    font: normal 8px/1.0 Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+
+.aventurien-date-info-text {
+    font: normal 12px/1.5 Arial, sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+
+.aventurien-date-info-location {
+    font: normal 12px/1.5 Arial, sans-serif;
+    color: #a99877;
+    text-shadow: 1px 1px black;
+}
+
