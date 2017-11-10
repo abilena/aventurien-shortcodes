@@ -294,9 +294,15 @@
     text-shadow: 1px 1px black;
 }
 
-.aventurien-date-info-text {
+.aventurien-date-info-post a {
     font: normal 12px/1.5 Arial, sans-serif;
     color: #fff;
+    text-shadow: 1px 1px black;
+}
+
+.aventurien-date-info-text {
+    font: normal 12px/1.5 Arial, sans-serif;
+    color: #a99877;
     text-shadow: 1px 1px black;
 }
 

@@ -96,6 +96,8 @@ function aventurien_date_html($atts) {
     $template->set("Style", $style);
     $template->set("Location", $atts['location']);
     $template->set("Info", $atts['info']);
+    $template->set("Post", get_the_title());
+    $template->set("Link", get_permalink());
     $output .= $template->output();
 
 	return $output;
