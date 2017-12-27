@@ -66,6 +66,10 @@ function aventurien_list_shortcode($atts, $content) {
 
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
+	
+	if (!is_array($atts)) {
+		$atts = array();
+	}
 
 	if (!isset($atts['id']) || !intval($atts['id'])) {
 		$atts['id'] = get_the_ID();
