@@ -380,7 +380,8 @@
 
 div .sp-wrap {
 	border: 1px solid #333333;
-	margin-bottom: -1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 div .sp-wrap-default {
