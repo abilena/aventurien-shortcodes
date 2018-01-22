@@ -322,3 +322,77 @@
     text-shadow: 1px 1px black;
 }
 
+/**************************************************************************************/
+/*** spoiler                                                                        ***/
+/**************************************************************************************/
+
+.sp-wrap {
+	padding: 0px;
+    border-style: solid;
+    border-image: none;
+    border-width: 1px 1px 1px 2px;
+    clear: both;
+	margin-bottom:10px;
+}
+.sp-head {
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	margin-left: 6px;
+	padding: 4px 14px 3px;
+	text-align: left;
+}
+.sp-body {
+	padding: 2px 6px;
+	height:auto;
+}
+.spdiv {
+	width: 98%;
+    margin: 0px auto;
+    text-align: right;
+    font-size: 0.8em;
+	cursor: pointer;
+	display:block;
+}
+
+
+.sp-wrap-default {
+	background: none repeat scroll 0% 0% #E9E9E6;
+    border-color: #C3CBD1;
+}
+.sp-wrap-default .sp-head {
+	background: url(../img/icon_plus.gif) no-repeat left center;
+	color: #2A2A2A;
+}
+.sp-wrap-default .sp-head.unfolded {
+	background: url(../img/icon_minus.gif) no-repeat left center;
+}
+.sp-wrap-default .sp-body {
+	background: #F5F5F5;
+	border-top:1px solid #C3CBD1;
+}
+.sp-wrap-default .spdiv {
+    color: #444;
+}
+
+
+/*	-==========================- OVERWRITE PLUGIN STYLES -==========================-  */
+
+div .sp-wrap {
+	border: 1px solid #333333;
+	margin-bottom: -1px;
+}
+
+div .sp-wrap-default {
+	background: none;
+}
+
+div .sp-wrap-default .sp-body {
+	background: none;
+	border-top: 1px solid #333333;
+}
+
+div .sp-wrap-default .sp-head {
+	color: unset;
+}
+
