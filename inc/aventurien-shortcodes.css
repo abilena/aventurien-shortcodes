@@ -385,7 +385,10 @@ div .sp-wrap {
 }
 
 div .sp-wrap-default {
-	background: none;
+	background-color: rgba(10, 10, 10, 0.2);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 30%);
+	border-color: #575757;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 div .sp-wrap-default .sp-body {
